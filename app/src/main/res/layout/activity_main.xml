@@ -4,34 +4,79 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
     <TextView
-      android:layout_width="wrap_content"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="Hello World!"
-        android:layout_marginStart="50dp"
+      android:text="Linear Layout"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintTop_toTopOf="parent"
+        />
 
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textStyle="bold"
+       android:text="Project"
+       android:gravity="center"
+       android:textSize="30sp"
+       />
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Second text"
-        android:textSize="20dp"
-        android:textColor="#E91E63"
+        android:text="Enter Your Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#0528EA"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="eg:-ridham sharma"
+
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Something About Your college"
+        android:textColor="#0528EA"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Enter Your Phone Number"
+        android:textStyle="bold"
+        android:textColor="#0528EA"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Validate"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"
         />
 
-
-
-
-
-
-
-  </LinearLayout>
+</LinearLayout>
