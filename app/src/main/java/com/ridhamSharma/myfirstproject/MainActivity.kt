@@ -1,5 +1,6 @@
 package com.ridhamSharma.myfirstproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     var etCollegeInfo: EditText?= null
     var etPhoneNumber: EditText? = null
      var btnValidate: Button? = null
+    var btnMove: Button? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         etCollegeInfo = findViewById(R.id.etCollegeInfo)
         etPhoneNumber = findViewById(R.id.etPhoneNumber)
         btnValidate = findViewById(R.id.btnValidate)
+        btnMove = findViewById(R.id.btnMove)
 
         btnValidate?.setOnClickListener {
             if (etName?.text.isNullOrEmpty()){
@@ -30,16 +33,17 @@ class MainActivity : AppCompatActivity() {
                 etPhoneNumber?.error = "Enter a Validate phone number"
             }else {
                 Toast.makeText(this,"Form validated successfully",Toast.LENGTH_LONG).show()
-
+                var intent = Intent(this,CheckboxRadioActivity::class.java)  //ticket to go to next screen
+                startActivity(intent)  // take to next screen
+                finish()
             }
-
-
-
-
-
-
         //? use to check null property ...put
         // toast has fixed position and in built function
+        }
+        btnMove?.setOnClickListener{
+            var intent = Intent(this,CheckboxRadioActivity::class.java)  //ticket to go to next screen
+            startActivity(intent)  // take to next screen
+            finish() // take out of app after seeing 2nd page ...when you exit
         }
 
 

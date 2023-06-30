@@ -89,5 +89,14 @@
         android:textColor="#FFFFFF"
         android:backgroundTint="#2196F3"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="move to next screen"
+        android:id="@+id/btnMove"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"
+        />
 
  </LinearLayout>
