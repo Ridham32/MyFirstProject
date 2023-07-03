@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="10dp"
     tools:context=".MainActivity">
     <TextView
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:text="Linear Layout"
         android:gravity="center"
         android:textSize="30sp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:textStyle="bold"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minLines="5"
+        android:minLines="2"
         android:hint="name,address or your experience in college"
         android:inputType="textCapSentences|textMultiLine"
         android:id="@+id/etCollegeInfo"
@@ -77,9 +77,41 @@
         android:hint="+91 xxxxxxxxxxx"
         android:id="@+id/etPhoneNumber"
         android:maxLength="10"
-
-
         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total marks in previous semester"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0528EA"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="eg:-499.0"
+        android:id="@+id/etMarks"
+        android:maxLength="10"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Percentage of previous semester"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0528EA"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="eg:-89.4"
+        android:id="@+id/etPercentage"
+        android:maxLength="10"
+        />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -89,14 +121,16 @@
         android:textColor="#FFFFFF"
         android:backgroundTint="#2196F3"
         />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="move to next screen"
-        android:id="@+id/btnMove"
-        android:layout_marginTop="40dp"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#2196F3"
-        />
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="move to next screen"-->
+<!--        android:id="@+id/btnMove"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:backgroundTint="#2196F3"-->
+<!--        />-->
+
+
 
  </LinearLayout>

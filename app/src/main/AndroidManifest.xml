@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyFirstProject"
         tools:targetApi="31">
         <activity
+            android:name=".IntentscreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".ActivityLifecycle"
             android:exported="false" />
         <activity
