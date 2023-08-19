@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     var etMarks: EditText?= null
     var etPercentage: EditText?= null
      var btnValidate: Button? = null
+
     //var btnMove: Button? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         etMarks = findViewById(R.id.etMarks)
         etPercentage = findViewById(R.id.etPercentage)
         btnValidate = findViewById(R.id.btnValidate)
+
 
        // btnMove = findViewById(R.id.btnMove)
 

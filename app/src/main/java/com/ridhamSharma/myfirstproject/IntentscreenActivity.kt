@@ -19,7 +19,6 @@ class IntentscreenActivity : AppCompatActivity() {
     var tvPhonenumber: TextView?= null
     var tvTotalmarks: TextView?= null
     var tvPercentage: TextView?= null
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.intentscreen)
